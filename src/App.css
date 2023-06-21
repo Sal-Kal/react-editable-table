@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.config-table {
+    border-collapse: collapse;
+    font-size: 0.9em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.config-table thead tr {
+    background-color: #009879;
+    color: white;
+    text-align: left;
+    font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.config-table th,
+.config-table td {
+    padding: 12px 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.config-table tbody tr {
+    border-bottom: 1px solid #dddddd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.config-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.edit-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    border-width: 2px;
+    overflow-x: auto;
+    overflow-y: auto;
+    width: 60%;
+    height: 80%;
+}
+
+.edit-button {
+    cursor: pointer;
+    border-width: 0;
+    border-radius: 50%;
+    width: 3rem;
+    aspect-ratio: 1;
+    padding: 0.3rem;
+    background: transparent;
+    transition-duration: 0.3s;
+}
+
+.edit-button:hover, .form-button:hover {
+    background-color: #009879;
+    color: white;
+}
+
+.form-button {
+    margin-block: 2rem;
+    border: 2px solid #009879;
+    color: #009879;
+    border-radius: 5px;
+    width: 9rem;
+    aspect-ratio: 3/1;
+    background-color: white;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.form-item {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    margin-inline: auto;
+    margin-block: 12px;
 }
