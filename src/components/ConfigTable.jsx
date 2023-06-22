@@ -53,10 +53,9 @@ const ConfigTable = () => {
           style={{
             overflowX: "auto",
             overflowY: "auto",
-            scrollbarWidth: "none",
             marginInline: "auto",
             marginBlock: "3rem",
-            width: "95%",
+            width: "98%",
             borderRadius: "10px",
             border: "2px solid black",
             boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
