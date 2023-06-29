@@ -1,17 +1,13 @@
-import ConfigTable from "./components/ConfigTable";
-// import EditModal from "./components/EditModal";
-import { store } from "./redux/store";
-import { Provider } from "react-redux";
+import Box from "@mui/material/Box";
+import MaterialTable from "./components/MaterialTable";
+import { Container } from "@mui/material";
 import "./App.css";
 
 const App = () => {
   return (
-    <Provider store={store}>
-      <div>
-        <ConfigTable />
-      </div>
-      {/* <EditModal /> */}
-    </Provider>
+    <Box sx={{ marginInline: "auto", width: "95%", marginTop: "3rem" }}>
+      <MaterialTable />
+    </Box>
   );
 };
 
